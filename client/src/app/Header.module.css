@@ -1,0 +1,85 @@
+.button {
+  appearance: auto;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(243, 243, 247);
+  margin: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 10pt;
+  position: relative;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  color: black;
+}
+
+.button:hover {
+  background-color: #dad9d9;
+}
+.button:active {
+  top: 1px;
+}
+
+.buttonSelected {
+  composes: button;
+  background-color: rgb(255, 105, 0);
+  color: rgb(92, 99, 112);
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 3px 10px 10px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.navButtons {
+  position: relative;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 400px;
+  z-index: 100;
+  vertical-align: middle;
+}
+
+.count {
+  display: inline-block;
+  /* background: gray; */
+  color: white;
+  /* position: absolute; */
+  text-align: center;
+  border-radius: 50%;
+  /* bottom: 15px; */
+  /* margin-left: -20px; */
+  /* padding-top: 5px; */
+  width: 15px;
+  height: 15px;
+  z-index: 100;
+  font-size: 9pt;
+  font-weight: 600;
+}
+.countRed {
+  composes: count;
+  background: red;
+}
+.countGreen {
+  composes: count;
+  background: green;
+}
+.filter {
+  /* position: relative; */
+  background: red;
+  /* width: 100%; */
+}
